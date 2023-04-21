@@ -43,12 +43,6 @@ dependencies {
 	testImplementation("org.awaitility:awaitility")
 }
 
-dependencyManagement {
-	imports {
-		mavenBom("org.testcontainers:testcontainers-bom:${property("testcontainersVersion")}")
-	}
-}
-
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
