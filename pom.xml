@@ -17,7 +17,6 @@
     <description>spring-boot-testcontainers-devmode</description>
     <properties>
         <java.version>17</java.version>
-        <testcontainers.version>1.18.0</testcontainers.version>
         <awaitility.version>4.2.0</awaitility.version>
     </properties>
     <dependencies>
@@ -85,17 +84,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.testcontainers</groupId>
-                <artifactId>testcontainers-bom</artifactId>
-                <version>${testcontainers.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
