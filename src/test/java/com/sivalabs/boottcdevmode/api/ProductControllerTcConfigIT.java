@@ -1,6 +1,6 @@
 package com.sivalabs.boottcdevmode.api;
 
-import com.sivalabs.boottcdevmode.TestcontainersConfiguration;
+import com.sivalabs.boottcdevmode.TestcontainersConfig;
 import com.sivalabs.boottcdevmode.domain.Product;
 import com.sivalabs.boottcdevmode.domain.ProductRepository;
 import org.hamcrest.CoreMatchers;
@@ -26,7 +26,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
-@Import(TestcontainersConfiguration.class)
+@Import(TestcontainersConfig.class)
 class ProductControllerTcConfigIT {
 
     @Autowired
